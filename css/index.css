@@ -11,3 +11,14 @@ h1 {
     text-align: center;
     font-size: 3em;
 }
+
+#info {
+    text-align: center;
+    font-size: 1.5em;
+    border: #FFFAE6;
+}
+
+input:focus {
+    outline: none;
+    border: 10px #f00a0a;
+}
