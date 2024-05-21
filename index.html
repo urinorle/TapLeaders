@@ -11,26 +11,27 @@
     <div class="container">
         <div class="container_inner">
             <h1>LEADER</h1>
-            <p class="score"></p>
+            <p class="score" id="leader-score">0</p>
         </div>
         <div class="container_inner">
             <h1>2nd Place</h1>
-            <p class="score"></p>
+            <p class="score" id="second-score">0</p>
         </div>
         <div class="container_inner">
             <h1>3rd Place</h1>
-            <p class="score"></p>
+            <p class="score" id="third-score">0</p>
         </div>
-        <!-- Ahora meteremos un botón -->
         <div class="container_inner">
-            <button id="start">Start</button>
+            <button id="click-button">Click Me!</button>
+            <p>Your Score: <span id="user-score">0</span></p>
         </div>
     </div>
-        <form id="info" method="post">
-            <input id="name" type="text" name="name" placeholder="Name" required>
-            <input id="email" type="email" name="email" placeholder="Email" required>
-            <input id="mult" type="mult" name = "mult" placeholder="x" required>
-        </form>
-    </div>
+    <form id="info" method="post">
+        <input id="name" type="text" name="name" placeholder="Name" required>
+        <input id="email" type="email" name="email" placeholder="Email" required>
+        <input id="mult" type="number" name="mult" placeholder="x" required>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="js/index.js"></script>
 </body>
 </html>

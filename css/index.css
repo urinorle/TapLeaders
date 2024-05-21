@@ -1,9 +1,14 @@
+/* CSS for index.css */
 body {
     background-color: #FFFAE6;
-    font-family: "courier", monospace;
-    margin: 10%;
-    padding: 10%;
-
+    font-family: "Courier", monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 h1 {
@@ -12,13 +17,65 @@ h1 {
     font-size: 3em;
 }
 
-#info {
+.container {
     text-align: center;
-    font-size: 1.5em;
-    border: #FFFAE6;
+    width: 80%;
 }
 
-input:focus {
+.container_inner {
+    margin: 10px 0;
+}
+
+.score {
+    font-size: 2em;
+    color: #333;
+}
+
+#click-button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: #FF5F00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#click-button:hover {
+    background-color: #e04b00;
+}
+
+form {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+form input {
+    padding: 10px;
+    margin: 5px 0;
+    width: 80%;
+    max-width: 300px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input:focus {
     outline: none;
-    border: 10px #f00a0a;
+    border: 2px solid #FF5F00;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #FF5F00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e04b00;
 }
