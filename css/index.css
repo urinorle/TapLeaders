@@ -17,6 +17,12 @@ h1 {
     font-size: 3em;
 }
 
+h2 {
+    color: #FF5F00;
+    text-align: center;
+    font-size: 2em;
+}
+
 .container {
     text-align: center;
     width: 80%;
@@ -51,7 +57,7 @@ form {
     margin-top: 20px;
 }
 
-form input {
+form input, form select {
     padding: 10px;
     margin: 5px 0;
     width: 80%;
@@ -61,7 +67,7 @@ form input {
     border-radius: 5px;
 }
 
-form input:focus {
+form input:focus, form select:focus {
     outline: none;
     border: 2px solid #FF5F00;
 }
@@ -78,4 +84,9 @@ form button {
 
 form button:hover {
     background-color: #e04b00;
+}
+
+.power-ups {
+    margin-top: 20px;
+    text-align: center;
 }

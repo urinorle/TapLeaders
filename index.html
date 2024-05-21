@@ -6,6 +6,7 @@
     <title>TapLeaders</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="">
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=EUR"></script>
 </head>
 <body>
     <div class="container">
@@ -15,23 +16,34 @@
         </div>
         <div class="container_inner">
             <h1>2nd Place</h1>
-            <p class="score" id="second-score">0</p>
+            <p class="score" id="second-score">50</p>
         </div>
         <div class="container_inner">
             <h1>3rd Place</h1>
-            <p class="score" id="third-score">0</p>
+            <p class="score" id="third-score">25</p>
         </div>
         <div class="container_inner">
             <button id="click-button">Click Me!</button>
             <p>Your Score: <span id="user-score">0</span></p>
         </div>
     </div>
-    <form id="info" method="post">
-        <input id="name" type="text" name="name" placeholder="Name" required>
-        <input id="email" type="email" name="email" placeholder="Email" required>
-        <input id="mult" type="number" name="mult" placeholder="x" required>
-        <button type="submit">Submit</button>
-    </form>
+    <div class="power-ups">
+        <h2>Purchase Power-Ups</h2>
+        <form id="power-up-form">
+            <label for="power-up">Select Power-Up:</label>
+            <select id="power-up">
+                <option value="1.1" data-price="2">x1.1 - 2€</option>
+                <option value="2" data-price="5">x2 - 5€</option>
+                <option value="5" data-price="10">x5 - 10€</option>
+                <option value="10" data-price="20">x10 - 20€</option>
+                <option value="100" data-price="100">x100 - 100€</option>
+                <option value="1000" data-price="500">x1000 - 500€</option>
+                <option value="5000" data-price="5000">x5000 - 5000€</option>
+            </select>
+        </form>
+        <div id="paypal-button-container"></div>
+        <p>Current Multiplier: <span id="current-multiplier">1</span></p>
+    </div>
     <script src="js/index.js"></script>
 </body>
 </html>
