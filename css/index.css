@@ -1,0 +1,13 @@
+body {
+    background-color: #FFFAE6;
+    font-family: "courier", monospace;
+    margin: 10%;
+    padding: 10%;
+
+}
+
+h1 {
+    color: #FF5F00;
+    text-align: center;
+    font-size: 3em;
+}
